@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="acss.controller.DashboardController">
+    <top>
+        <VBox alignment="CENTER" spacing="5">
+            <Label fx:id="welcomeLabel" style="-fx-font-size: 18px;"/>
+            <Label fx:id="roleLabel" style="-fx-font-size: 14px;"/>
+        </VBox>
+    </top>
+    <center>
+        <TabPane fx:id="tabPane">
+            <Tab text="Manage Users">
+                <VBox spacing="10" padding="10">
+                    <TableView fx:id="userTable" prefHeight="200">
+                        <columns>
+                            <TableColumn text="Username" fx:id="colUsername"/>
+                            <TableColumn text="Role" fx:id="colRole"/>
+                        </columns>
+                    </TableView>
+                    <HBox spacing="10">
+                        <TextField fx:id="userUsernameField" promptText="Username"/>
+                        <PasswordField fx:id="userPasswordField" promptText="Password"/>
+                        <ComboBox fx:id="userRoleComboBox"/>
+                        <Button text="Add" onAction="#handleAddUser"/>
+                        <Button text="Update" onAction="#handleUpdateUser"/>
+                        <Button text="Delete" onAction="#handleDeleteUser"/>
+                        <Button text="Search" onAction="#handleSearchUser"/>
+                    </HBox>
+                    <Label fx:id="userMsgLabel" textFill="green"/>
+                </VBox>
+            </Tab>
+            <Tab text="Manage Cars">
+                <VBox spacing="10" padding="10">
+                    <TableView fx:id="carTable" prefHeight="200">
+                        <columns>
+                            <TableColumn text="ID" fx:id="colCarId"/>
+                            <TableColumn text="Model" fx:id="colCarModel"/>
+                            <TableColumn text="Brand" fx:id="colCarBrand"/>
+                            <TableColumn text="Price" fx:id="colCarPrice"/>
+                            <TableColumn text="Available" fx:id="colCarAvailable"/>
+                        </columns>
+                    </TableView>
+                    <HBox spacing="10">
+                        <TextField fx:id="carIdField" promptText="ID"/>
+                        <TextField fx:id="carModelField" promptText="Model"/>
+                        <TextField fx:id="carBrandField" promptText="Brand"/>
+                        <TextField fx:id="carPriceField" promptText="Price"/>
+                        <ComboBox fx:id="carAvailableComboBox"/>
+                        <Button text="Add" onAction="#handleAddCar"/>
+                        <Button text="Update" onAction="#handleUpdateCar"/>
+                        <Button text="Delete" onAction="#handleDeleteCar"/>
+                        <Button text="Search" onAction="#handleSearchCar"/>
+                    </HBox>
+                    <Label fx:id="carMsgLabel" textFill="green"/>
+                </VBox>
+            </Tab>
+            <Tab text="Analysis & Reports">
+                <VBox spacing="10" padding="10">
+                    <Label text="(Analysis and reporting UI goes here)"/>
+                </VBox>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane> 
