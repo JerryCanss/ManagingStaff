@@ -1,0 +1,16 @@
+Admin123|Admin001|Admin123@gmail.com|0167771558|2025-05-28 03:04:46
+TEST3|Test3|TEST3@GMAil.com|12345678|2025-05-28 04:12:59
+Edit|Car|CAR001|Vios|2025-05-28 17:08:56|Car info updated
+Edit|Car|CAR001|Vios|2025-05-28 17:54:08|Car info updated
+Edit|Staff|S001|John Doe|2025-05-28 18:03:59|Staff info updated
+Edit|Staff|S001|John Doe|2025-05-28 18:51:06|Staff info updated
+Edit|Staff|S002|TEST|2025-05-28 20:06:31|Staff info updated
+Edit|Staff|S002|TESTTEST|2025-05-28 20:06:42|Staff info updated
+Edit|Staff|S002|TESTTEST|2025-05-28 20:06:46|Staff info updated
+TEST4|1345|RY34I3U@gmail.com|073295862|2025-05-28 20:24:35
+Edit|Staff|S001|John Doe|2025-05-29 18:59:37|Department/Salary updated in Analysis
+Edit|Staff|M0001|JERRY|2025-05-29 19:19:42|Staff info updated
+Add|Customer|C0001|1|2025-05-29 20:19:42|Customer added
+Add|Car|CAR0001|15|2025-05-29 20:20:00|Car added
+Remove|Customer|C0001|1|2025-05-29 20:28:35|Customer removed
+Remove|Car|CAR0001|15|2025-05-29 20:28:38|Car removed
